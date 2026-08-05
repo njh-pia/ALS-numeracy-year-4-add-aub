@@ -1,0 +1,10 @@
+:root{
+  --ink:#53585F;
+  --line:#9a9ea3;
+  --paper:#ffffff;
+  --canvas:#e9e9e6;
+  --text-primary:var(--ink);
+  --border-structural:var(--line);
+  --surface-paper:var(--paper);
+  --surface-canvas:var(--canvas);
+}

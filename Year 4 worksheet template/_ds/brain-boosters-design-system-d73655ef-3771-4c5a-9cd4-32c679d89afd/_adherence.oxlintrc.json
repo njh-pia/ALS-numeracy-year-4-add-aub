@@ -1,0 +1,163 @@
+{
+  "plugins": [
+    "react",
+    "import"
+  ],
+  "rules": {
+    "react/forbid-elements": [
+      "warn",
+      {
+        "forbid": []
+      }
+    ],
+    "no-restricted-imports": [
+      "warn",
+      {
+        "patterns": [
+          {
+            "group": [
+              "components/worksheet/**"
+            ],
+            "message": "Import design-system components from 'index.js', not component internals."
+          }
+        ]
+      }
+    ],
+    "no-restricted-syntax": [
+      "warn",
+      {
+        "selector": "Literal[value=/#[0-9a-fA-F]{3,8}\\b/]",
+        "message": "Raw hex color — use a design-system color token via var()."
+      },
+      {
+        "selector": "Literal[value=/\\b\\d+px\\b/]",
+        "message": "Raw px value — use a design-system spacing token via var()."
+      },
+      {
+        "selector": "Literal[value=/font-family\\s*:\\s*(?!['\\\"]?(?:Playpen Sans|Londrina Solid|Poppins|Teachers))/i]",
+        "message": "Font not provided by the design system. Available: Playpen Sans, Londrina Solid, Poppins, Teachers."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='ActivityBox'] > JSXAttribute > JSXIdentifier[name!=/^(?:number|label|placeholder|width|height|key|ref|className|style|children)$/]",
+        "message": "<ActivityBox> doesn't accept that prop. Declared props: number, label, placeholder, width, height."
+      }
+    ]
+  },
+  "overrides": [
+    {
+      "files": [
+        "**/index.js"
+      ],
+      "rules": {
+        "no-restricted-imports": "off"
+      }
+    }
+  ],
+  "x-omelette": {
+    "components": {
+      "ActivityBox": {
+        "replaces": []
+      }
+    },
+    "tokens": [
+      "--badge-border-w",
+      "--badge-offset-left",
+      "--badge-offset-top",
+      "--badge-size",
+      "--border-structural",
+      "--box-border-w",
+      "--box-pad-bottom",
+      "--box-pad-left",
+      "--box-pad-right",
+      "--box-pad-top",
+      "--box-radius",
+      "--canvas",
+      "--font-body",
+      "--font-display",
+      "--font-footer",
+      "--font-label",
+      "--footer-bottom",
+      "--footer-right",
+      "--gap-box",
+      "--header-divider-top",
+      "--header-eyebrow-top",
+      "--header-left",
+      "--header-title-top",
+      "--ink",
+      "--line",
+      "--line-height-body",
+      "--margin-edge",
+      "--page-h",
+      "--page-w",
+      "--paper",
+      "--surface-canvas",
+      "--surface-paper",
+      "--text-badge",
+      "--text-body",
+      "--text-eyebrow",
+      "--text-footer",
+      "--text-label",
+      "--text-primary",
+      "--text-title",
+      "--tracking-eyebrow",
+      "--weight-badge",
+      "--weight-body",
+      "--weight-eyebrow",
+      "--weight-label",
+      "--weight-title"
+    ],
+    "tokenKinds": {
+      "--ink": "color",
+      "--line": "color",
+      "--paper": "color",
+      "--canvas": "color",
+      "--text-primary": "font",
+      "--border-structural": "color",
+      "--surface-paper": "color",
+      "--surface-canvas": "color",
+      "--font-display": "font",
+      "--font-label": "font",
+      "--font-body": "font",
+      "--font-footer": "font",
+      "--text-title": "font",
+      "--text-eyebrow": "font",
+      "--text-badge": "font",
+      "--text-label": "font",
+      "--text-body": "font",
+      "--text-footer": "font",
+      "--weight-title": "font",
+      "--weight-eyebrow": "font",
+      "--weight-badge": "font",
+      "--weight-label": "font",
+      "--weight-body": "font",
+      "--tracking-eyebrow": "font",
+      "--line-height-body": "font",
+      "--page-w": "other",
+      "--page-h": "other",
+      "--header-left": "spacing",
+      "--header-title-top": "spacing",
+      "--header-eyebrow-top": "spacing",
+      "--header-divider-top": "spacing",
+      "--margin-edge": "spacing",
+      "--gap-box": "spacing",
+      "--box-border-w": "other",
+      "--box-radius": "radius",
+      "--box-pad-top": "spacing",
+      "--box-pad-right": "spacing",
+      "--box-pad-bottom": "spacing",
+      "--box-pad-left": "spacing",
+      "--badge-size": "spacing",
+      "--badge-border-w": "other",
+      "--badge-offset-left": "spacing",
+      "--badge-offset-top": "spacing",
+      "--footer-right": "spacing",
+      "--footer-bottom": "spacing"
+    },
+    "fontFamilies": [
+      "Londrina Solid",
+      "Playpen Sans",
+      "Poppins",
+      "Teachers"
+    ]
+  }
+}

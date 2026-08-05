@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@400;600;700&family=Londrina+Solid:wght@300;400&family=Poppins:wght@400&family=Teachers:wght@400;500&display=swap');
+:root{
+  --font-display:'Londrina Solid',sans-serif;
+  --font-label:'Playpen Sans',sans-serif;
+  --font-body:'Teachers',sans-serif;
+  --font-footer:'Poppins',sans-serif;
+
+  --text-title:16pt;
+  --text-eyebrow:7pt;
+  --text-badge:8pt;
+  --text-label:10pt;
+  --text-body:10pt;
+  --text-footer:7pt;
+
+  --weight-title:300;
+  --weight-eyebrow:700;
+  --weight-badge:600;
+  --weight-label:500;
+  --weight-body:400;
+
+  --tracking-eyebrow:0.06em;
+  --line-height-body:1.5;
+}

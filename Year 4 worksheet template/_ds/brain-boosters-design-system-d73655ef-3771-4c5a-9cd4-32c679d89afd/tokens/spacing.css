@@ -1,0 +1,25 @@
+:root{
+  --page-w:29.7cm; /* @kind other */
+  --page-h:21cm; /* @kind other */
+  --header-left:0.82cm; /* @kind spacing */
+  --header-title-top:0.3cm; /* @kind spacing */
+  --header-eyebrow-top:1.08cm; /* @kind spacing */
+  --header-divider-top:1.5cm; /* @kind spacing */
+  --margin-edge:0.5cm; /* @kind spacing */
+  --gap-box:0.3cm; /* @kind spacing */
+
+  --box-border-w:1pt; /* @kind other */
+  --box-radius:3pt; /* @kind radius */
+  --box-pad-top:0.05cm; /* @kind spacing */
+  --box-pad-right:0.4cm; /* @kind spacing */
+  --box-pad-bottom:0.3cm; /* @kind spacing */
+  --box-pad-left:0.4cm; /* @kind spacing */
+
+  --badge-size:0.54cm; /* @kind spacing */
+  --badge-border-w:1.13pt; /* @kind other */
+  --badge-offset-left:-0.17cm; /* @kind spacing */
+  --badge-offset-top:-0.12cm; /* @kind spacing */
+
+  --footer-right:0.5cm; /* @kind spacing */
+  --footer-bottom:0.14cm; /* @kind spacing */
+}
